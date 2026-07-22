@@ -28,8 +28,13 @@ Course), sitemap + robots.
   Replace with genuine student feedback (with permission) before promoting.
 - Session counts, durations, and "device provided" logistics are draft copy.
 - Pricing is intentionally unstated ("launch cohort" framing).
-- Both forms are front-end only — wire `/api` handlers (see
-  mendmedicalwear.com's `api/contact.js` pattern) for real submissions.
+- Forms (contact, newsletter, booking) POST to `/api/contact` (Resend →
+  contact@stevenjhubbard.com). **Requires the `RESEND_API_KEY` environment
+  variable on the Vercel project** — without it submissions show the
+  graceful error fallback with a direct email address.
+- The booking widget is a styled placeholder: requests are emailed and
+  confirmed by hand. Swap in a Cal.com/Calendly embed for real-time
+  scheduling later.
 - Update the canonical URLs when a custom domain is attached.
 
 ## Deploy

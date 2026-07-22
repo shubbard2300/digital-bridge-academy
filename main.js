@@ -277,12 +277,70 @@
     tickCd(); setInterval(tickCd, 1000);
   }
 
-  /* ---------- Forms (front-end only for now) ---------- */
-  $$('form[data-demo]').forEach(function (form) {
+  /* ---------- Booking slot picker ---------- */
+  var dayRow = $('#bookDays'), timeRow = $('#bookTimes');
+  function pickSlot(row, btn) {
+    $$('.slot', row).forEach(function (x) { x.classList.remove('selected'); x.setAttribute('aria-pressed', 'false'); });
+    btn.classList.add('selected'); btn.setAttribute('aria-pressed', 'true');
+  }
+  if (dayRow) {
+    var fmt = new Intl.DateTimeFormat('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
+    for (var di = 1; di <= 7; di++) {
+      var dd = new Date(); dd.setDate(dd.getDate() + di);
+      var db = document.createElement('button');
+      db.type = 'button'; db.className = 'slot'; db.textContent = fmt.format(dd);
+      db.setAttribute('aria-pressed', 'false');
+      if (dd.getDay() === 0) { db.disabled = true; db.setAttribute('data-tip', 'We rest on Sundays — even bridges need a day off.'); }
+      db.addEventListener('click', function () { pickSlot(dayRow, this); });
+      dayRow.appendChild(db);
+    }
+    $$('.slot', timeRow).forEach(function (b) {
+      b.setAttribute('aria-pressed', 'false');
+      b.addEventListener('click', function () { pickSlot(timeRow, this); });
+    });
+  }
+  function composeBooking() {
+    var d = $('.slot.selected', dayRow), t = $('.slot.selected', timeRow);
+    if (!d || !t) return '';
+    return 'Booking request — free consultation\nDay: ' + d.textContent + '\nTime: ' + t.textContent + ' (visitor local time)';
+  }
+
+  /* ---------- Live forms → /api/contact ---------- */
+  $$('form[data-live]').forEach(function (form) {
     form.addEventListener('submit', function (e) {
       e.preventDefault();
-      var msg = $('.form-msg', form); if (msg) msg.classList.add('show');
-      form.reset();
+      var msg = $('.form-msg', form), err = $('.form-err', form), btn = form.querySelector('button[type="submit"]');
+      if (msg) msg.classList.remove('show');
+      if (err) err.classList.remove('show');
+      function fieldVal(sel) { var el = form.querySelector(sel); return el ? el.value.trim() : ''; }
+      var isBooking = form.dataset.compose === 'booking';
+      var message = isBooking ? composeBooking() : (fieldVal('textarea[name="message"]') || form.dataset.message || '');
+      if (isBooking && !message) {
+        if (err) { err.textContent = 'Please pick a day and a time first.'; err.classList.add('show'); }
+        return;
+      }
+      var interest = form.querySelector('select[name="interest"]');
+      if (interest) message = 'Interested in: ' + interest.value + '\n\n' + message;
+      var payload = {
+        name: fieldVal('input[name="name"]') || form.dataset.name || 'Website visitor',
+        email: fieldVal('input[name="email"]'),
+        message: message
+      };
+      if (btn) btn.disabled = true;
+      fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      }).then(function (res) {
+        if (!res.ok) throw new Error('Request failed');
+        if (msg) msg.classList.add('show');
+        form.reset();
+        if (isBooking) $$('.slot.selected', form).forEach(function (s) { s.classList.remove('selected'); s.setAttribute('aria-pressed', 'false'); });
+      }).catch(function () {
+        if (err) { err.textContent = 'Something went wrong — please email us directly at contact@stevenjhubbard.com.'; err.classList.add('show'); }
+      }).finally(function () {
+        if (btn) btn.disabled = false;
+      });
     });
   });
 

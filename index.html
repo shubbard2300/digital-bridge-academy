@@ -352,7 +352,52 @@
       <div class="cd-cell"><div class="cd-num" id="cdS">00</div><div class="cd-label">Seconds</div></div>
     </div>
     <div class="cta-row reveal" style="justify-content:center; margin-top:30px;">
-      <a href="#contact" class="btn btn-primary">Save my free seat <span class="btn-arrow">→</span></a>
+      <a href="#book" class="btn btn-primary">Save my free seat <span class="btn-arrow">→</span></a>
+    </div>
+  </section>
+
+  <!-- ============ BOOKING ============ -->
+  <section class="section" id="book">
+    <div class="section-head reveal">
+      <h2>Book a time that <span class="grad">works for you</span></h2>
+      <p class="sub">Pick a day and time for your free consultation or workshop seat — we'll confirm by email within one business day.</p>
+    </div>
+    <div class="booking-grid">
+      <div class="booking-box reveal">
+        <form data-live data-compose="booking" data-name-fallback="Booking request" aria-label="Book a consultation">
+          <div class="slot-label">1 · Pick a day</div>
+          <div class="slot-row" id="bookDays"></div>
+          <div class="slot-label">2 · Pick a time</div>
+          <div class="slot-row" id="bookTimes">
+            <button type="button" class="slot">10:00 AM</button>
+            <button type="button" class="slot">11:30 AM</button>
+            <button type="button" class="slot">1:00 PM</button>
+            <button type="button" class="slot">2:30 PM</button>
+            <button type="button" class="slot">4:00 PM</button>
+          </div>
+          <div class="slot-label">3 · Your details</div>
+          <div class="booking-fields">
+            <input type="text" name="name" placeholder="Your name" aria-label="Your name" required>
+            <input type="email" name="email" placeholder="you@example.com" aria-label="Email address" required>
+          </div>
+          <div style="margin-top:18px;">
+            <button type="submit" class="btn btn-primary">Request this time <span class="btn-arrow">→</span></button>
+          </div>
+          <div class="form-msg" role="status" style="margin-top:12px;">🎉 Request received! We'll confirm your time by email shortly.</div>
+          <div class="form-err" role="alert" style="margin-top:12px;"></div>
+          <p class="booking-note">Times shown in your local timezone. Live real-time calendar coming soon — for now, requests are confirmed personally by a human (fitting, right?).</p>
+        </form>
+      </div>
+      <div class="reveal" style="--d:.12s">
+        <h3 style="font-weight:800; font-size:20px; margin-bottom:12px;">What happens in a free consultation?</h3>
+        <p style="color:var(--muted); font-size:15px; margin-bottom:16px;">Twenty relaxed minutes, in person or by phone — whichever you prefer:</p>
+        <ul style="list-style:none;">
+          <li style="padding:10px 0; border-top:1px solid var(--line); font-size:14.5px;">☕ We ask what you want to be able to <em>do</em> — not what you know.</li>
+          <li style="padding:10px 0; border-top:1px solid var(--line); font-size:14.5px;">🗺️ You get an honest recommendation: a track, a pace, and a start date.</li>
+          <li style="padding:10px 0; border-top:1px solid var(--line); font-size:14.5px;">🎁 You leave with one useful skill on the spot — our treat.</li>
+          <li style="padding:10px 0; border-top:1px solid var(--line); border-bottom:1px solid var(--line); font-size:14.5px;">🚫 Zero sales pressure. If we're not the right fit, we'll say so.</li>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -406,16 +451,17 @@
         <div style="margin-top:34px; padding:24px; background:var(--surface); border:1px solid var(--line); border-radius:var(--radius);">
           <h3 style="font-size:15px; font-weight:800; margin-bottom:8px;">📬 The Bridge Bulletin</h3>
           <p style="font-size:13.5px; margin-bottom:14px;">One friendly email a month: a scam alert, a tech tip, and an AI trick. No spam, ever.</p>
-          <form data-demo aria-label="Newsletter signup">
+          <form data-live data-name="Newsletter signup" data-message="Please add me to The Bridge Bulletin (monthly newsletter)." aria-label="Newsletter signup">
             <div class="newsletter-row" style="margin:0;">
-              <input type="email" placeholder="you@example.com" aria-label="Email address" required>
+              <input type="email" name="email" placeholder="you@example.com" aria-label="Email address" required>
               <button class="btn btn-primary btn-sm" type="submit">Subscribe</button>
             </div>
-            <div class="form-msg">🎉 You're on the list!</div>
+            <div class="form-msg" role="status">🎉 You're on the list!</div>
+            <div class="form-err" role="alert"></div>
           </form>
         </div>
       </div>
-      <form data-demo class="reveal" style="--d:.12s" aria-label="Contact form">
+      <form data-live class="reveal" style="--d:.12s" aria-label="Contact form">
         <div>
           <label for="name">Name</label>
           <input type="text" id="name" name="name" autocomplete="name" required>
@@ -441,7 +487,8 @@
           <textarea id="message" name="message" required placeholder="e.g. I want to video call my grandkids without calling my neighbor for help…"></textarea>
         </div>
         <button type="submit" class="btn btn-primary">Send message <span class="btn-arrow">→</span></button>
-        <div class="form-msg">🎉 Thanks for reaching out — we'll get back to you soon.</div>
+        <div class="form-msg" role="status">🎉 Thanks for reaching out — we'll get back to you soon.</div>
+        <div class="form-err" role="alert"></div>
       </form>
     </div>
   </section>
