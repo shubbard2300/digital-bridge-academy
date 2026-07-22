@@ -1,8 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
-  <rect width="48" height="48" rx="10" fill="#1F4E6B"/>
-  <path d="M6 32 C15 19, 33 19, 42 32" fill="none" stroke="#FAF9F6" stroke-width="3.5" stroke-linecap="round"/>
-  <line x1="12" y1="32" x2="12" y2="26.5" stroke="#FAF9F6" stroke-width="3"/>
-  <line x1="24" y1="32" x2="24" y2="22.5" stroke="#F2B84B" stroke-width="3"/>
-  <line x1="36" y1="32" x2="36" y2="26.5" stroke="#FAF9F6" stroke-width="3"/>
-  <line x1="4" y1="32" x2="44" y2="32" stroke="#FAF9F6" stroke-width="3.5" stroke-linecap="round"/>
+<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="48" y2="48">
+      <stop offset="0" stop-color="#2563EB"/><stop offset=".55" stop-color="#0EA5E9"/><stop offset="1" stop-color="#14B8A6"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="44" height="44" rx="12" fill="url(#g)"/>
+  <path d="M8 32c5-9 11-13.5 16-13.5S35 23 40 32" stroke="#fff" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <line x1="14" y1="26.5" x2="14" y2="34" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/>
+  <line x1="24" y1="18.5" x2="24" y2="34" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/>
+  <line x1="34" y1="26.5" x2="34" y2="34" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/>
+  <line x1="7" y1="34" x2="41" y2="34" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
 </svg>

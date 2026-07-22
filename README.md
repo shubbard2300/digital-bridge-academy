@@ -1,22 +1,24 @@
 # Digital Bridge Academy
 
-Launch-test landing site for Digital Bridge Academy — practical, human-first
-digital skills training (everyday tech confidence, online safety, and
-job-ready computer skills).
+**Empowering Everyday People Through Technology** — Steven J Hubbard LLC
 
-## Status
+A single-page site for Digital Bridge Academy: practical, patient, personalized
+tech coaching covering computer skills fundamentals, internet safety & digital
+literacy, AI basics for everyday life, and resume building & job search.
 
-This is a **launch-test draft**. The copy, program tracks, and contact details
-are a starting point meant to be edited — nothing here is final.
+## Stack
 
-- Static site: `index.html` + `styles.css`, no build step.
-- Contact form is front-end only (shows a confirmation message). Wire it to a
-  backend (e.g. a Vercel serverless function like mendmedicalwear.com's
-  `api/contact.js`) before real launch.
-- Canonical URL currently points at the Vercel default domain; update it when
-  a custom domain is attached.
+- Static HTML/CSS/JS (`index.html`) — no build step
+- `api/contact.js` — Vercel serverless function that forwards contact-form
+  submissions via [Resend](https://resend.com) (requires the `RESEND_API_KEY`
+  environment variable on the Vercel project)
 
-## Deploy
+## Run locally
 
-Deployed on Vercel as the `digital-bridge-academy` project. Any static host
-works — there is no build step.
+```bash
+python3 -m http.server 8000
+# open http://localhost:8000
+```
+
+The contact form's email send only works when deployed to Vercel with
+`RESEND_API_KEY` configured.
