@@ -1,22 +1,38 @@
 # Digital Bridge Academy
 
-Launch-test landing site for Digital Bridge Academy — practical, human-first
-digital skills training (everyday tech confidence, online safety, and
-job-ready computer skills).
+Premium multi-page marketing site for Digital Bridge Academy — patient,
+human-first digital skills training: everyday tech confidence, online safety,
+job-ready computer skills, and AI for beginners.
 
-## Status
+## Pages
 
-This is a **launch-test draft**. The copy, program tracks, and contact details
-are a starting point meant to be edited — nothing here is final.
+- `index.html` — homepage: hero (particles, floating cards, parallax), stats,
+  audience, course cards, journey timeline, digital-confidence quiz, AI teaser,
+  testimonials carousel, workshop countdown, FAQ, contact + newsletter.
+- `ai.html` — AI for Everyone: capability grid, tabbed prompt examples,
+  before/after comparisons.
+- `courses/*.html` — three course pages (generated from a shared template):
+  skills, interactive syllabus, instructor, reviews, certificate preview.
 
-- Static site: `index.html` + `styles.css`, no build step.
-- Contact form is front-end only (shows a confirmation message). Wire it to a
-  backend (e.g. a Vercel serverless function like mendmedicalwear.com's
-  `api/contact.js`) before real launch.
-- Canonical URL currently points at the Vercel default domain; update it when
-  a custom domain is attached.
+## Tech
+
+Static site — **no build step**. Vanilla HTML/CSS/JS.
+Dark/light theme (system default + persisted toggle), scroll reveals,
+tooltips, WCAG-minded (skip link, focus states, ARIA labels,
+`prefers-reduced-motion`), JSON-LD structured data (Organization, FAQPage,
+Course), sitemap + robots.
+
+## ⚠️ Placeholder content — replace before real launch
+
+- **Testimonials/reviews are illustrative placeholders**, not real quotes.
+  Replace with genuine student feedback (with permission) before promoting.
+- Session counts, durations, and "device provided" logistics are draft copy.
+- Pricing is intentionally unstated ("launch cohort" framing).
+- Both forms are front-end only — wire `/api` handlers (see
+  mendmedicalwear.com's `api/contact.js` pattern) for real submissions.
+- Update the canonical URLs when a custom domain is attached.
 
 ## Deploy
 
-Deployed on Vercel as the `digital-bridge-academy` project. Any static host
-works — there is no build step.
+Git-linked to the `digital-bridge-academy` Vercel project — every push to
+`main` deploys automatically.

@@ -3,274 +3,361 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Digital Bridge Academy — Practical Tech Skills for Everyone</title>
-<meta name="description" content="Digital Bridge Academy teaches practical, real-world digital skills — from everyday tech confidence to job-ready computer training — with patient, human-first instruction.">
+<title>Digital Bridge Academy — Computer Classes, Digital Skills & AI for Beginners</title>
+<meta name="description" content="Friendly, patient computer classes for adults and seniors: computer basics, internet safety, email, job skills, and AI for beginners. Small groups, plain language, real confidence. Portland, OR.">
+<meta name="keywords" content="computer classes near me, computer skills for seniors, learn AI, AI for beginners, computer basics, digital literacy, internet safety, job skills, beginner computer classes, adult education, technology coaching">
 <meta name="robots" content="index, follow">
-<meta name="theme-color" content="#0E1720">
+<meta name="theme-color" content="#0B141D">
 <link rel="canonical" href="https://digital-bridge-academy.vercel.app/">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<script>document.documentElement.classList.add('js')</script>
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Digital Bridge Academy">
-<meta property="og:title" content="Digital Bridge Academy — Practical Tech Skills for Everyone">
-<meta property="og:description" content="Patient, human-first digital skills training — everyday tech confidence, online safety, and job-ready computer skills.">
+<meta property="og:title" content="Digital Bridge Academy — Digital Skills & AI for Everyone">
+<meta property="og:description" content="Patient, human-first computer classes for adults and seniors — everyday tech, online safety, job skills, and AI for beginners.">
 <meta property="og:url" content="https://digital-bridge-academy.vercel.app/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Digital Bridge Academy — Digital Skills & AI for Everyone">
+<meta name="twitter:description" content="Patient, human-first computer classes for adults and seniors — everyday tech, online safety, job skills, and AI for beginners.">
 
-<script>document.documentElement.classList.add('js')</script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "EducationalOrganization",
   "name": "Digital Bridge Academy",
   "url": "https://digital-bridge-academy.vercel.app/",
-  "description": "Practical, human-first digital skills training — everyday tech confidence, online safety, and job-ready computer skills."
+  "email": "contact@stevenjhubbard.com",
+  "address": { "@type": "PostalAddress", "addressLocality": "Portland", "addressRegion": "OR", "addressCountry": "US" },
+  "description": "Patient, human-first digital skills training for adults and seniors — everyday tech confidence, online safety, job-ready computer skills, and AI for beginners."
 }
 </script>
-<link rel="stylesheet" href="styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "Do I need to own a computer to take classes?", "acceptedAnswer": { "@type": "Answer", "text": "No — bring whatever you have, even if it's just a phone. If you need a device for the Job-Ready track, we provide one during sessions." } },
+    { "@type": "Question", "name": "Am I too old or too far behind to learn computers?", "acceptedAnswer": { "@type": "Answer", "text": "Absolutely not. Our favorite students are the ones who swear they're hopeless — they're usually video-calling family within two sessions." } },
+    { "@type": "Question", "name": "Do you teach AI for beginners?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Our AI for Everyone sessions show you how to use tools like chat assistants for email, resumes, research, and everyday tasks — no programming required." } },
+    { "@type": "Question", "name": "Can I gift classes to a parent or grandparent?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — mention it in your message and we'll set everything up so all they have to do is show up." } }
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap">
+<link rel="stylesheet" href="/styles.css">
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="bg-blobs" aria-hidden="true"></div>
 <div class="progress-bar" id="progressBar" aria-hidden="true"></div>
 
-<header id="siteHeader">
+<header class="site-header">
   <div class="wrap header-inner">
-    <a href="#top" class="logo" data-tip="That's us — welcome aboard!">
-      <svg viewBox="0 0 48 48" aria-hidden="true"><path class="bridge-arc" d="M4 34 C14 18, 34 18, 44 34" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/><line x1="10" y1="34" x2="10" y2="27.5" stroke="currentColor" stroke-width="3"/><line x1="19" y1="34" x2="19" y2="23.5" stroke="currentColor" stroke-width="3"/><line x1="29" y1="34" x2="29" y2="23.5" stroke="currentColor" stroke-width="3"/><line x1="38" y1="34" x2="38" y2="27.5" stroke="currentColor" stroke-width="3"/><line x1="2" y1="34" x2="46" y2="34" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/></svg>
+    <a href="/" class="logo" aria-label="Digital Bridge Academy home">
+      <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M4 34 C14 18, 34 18, 44 34" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/><line x1="10" y1="34" x2="10" y2="27.5" stroke="currentColor" stroke-width="3"/><line x1="19" y1="34" x2="19" y2="23.5" stroke="currentColor" stroke-width="3"/><line x1="29" y1="34" x2="29" y2="23.5" stroke="currentColor" stroke-width="3"/><line x1="38" y1="34" x2="38" y2="27.5" stroke="currentColor" stroke-width="3"/><line x1="2" y1="34" x2="46" y2="34" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/></svg>
       <span>Digital Bridge <em>Academy</em></span>
     </a>
-    <nav id="siteNav">
-      <a href="#about" data-section="about">About</a>
-      <a href="#programs" data-section="programs">Programs</a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#courses" data-section="courses">Courses</a>
+      <a href="#ai" data-section="ai">AI for Everyone</a>
       <a href="#quiz" data-section="quiz">Find Your Track</a>
-      <a href="#how" data-section="how">How It Works</a>
-      <a href="#contact" class="nav-cta">Get Started</a>
+      <a href="#faq" data-section="faq">FAQ</a>
+      <a href="#contact" class="nav-cta">Book Free Consult</a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle color theme">☀️</button>
     </nav>
   </div>
 </header>
 
+<main id="main">
 <div class="wrap">
 
-  <!-- Hero -->
+  <!-- ============ HERO ============ -->
   <section class="hero" id="top">
+    <canvas id="particles" aria-hidden="true"></canvas>
     <div class="hero-text">
-      <div class="eyebrow reveal">Digital Bridge Academy</div>
-      <h1 class="reveal" style="--d:.08s">Technology shouldn't leave anyone behind.</h1>
-      <p class="reveal" style="--d:.16s">We teach practical, real-world digital skills with patient, human-first instruction — so you can <span class="rotator-box"><span id="rotator" class="rotator">bank online</span></span> with confidence.</p>
-      <div class="cta-row reveal" style="--d:.24s">
-        <a href="#quiz" class="btn btn-primary">Find Your Track <span class="btn-arrow">→</span></a>
-        <a href="#programs" class="btn btn-secondary">Explore Programs</a>
+      <span class="eyebrow reveal"><span class="dot"></span> Now enrolling · Portland, OR</span>
+      <h1 class="reveal" style="--d:.06s">Technology shouldn't leave <span class="grad">anyone</span> behind.</h1>
+      <p class="lede reveal" style="--d:.14s">Patient, human-first classes in computer basics, online safety, job skills, and AI — so you can <span class="rotator-box"><span id="rotator" class="rotator">video call the grandkids</span></span> with total confidence.</p>
+      <div class="cta-row reveal" style="--d:.22s">
+        <a href="#quiz" class="btn btn-primary btn-lg">Take the 60-second quiz <span class="btn-arrow">→</span></a>
+        <a href="#contact" class="btn btn-secondary btn-lg">Book a free consultation</a>
       </div>
-      <ul class="hero-points reveal" style="--d:.32s">
-        <li data-tip="Never more than 6 learners per instructor — and 1-on-1 help is always available.">Small groups &amp; one-on-one help</li>
-        <li data-tip="If we ever use a word you don't know, we stop and explain it. That's a promise.">Plain language, zero jargon</li>
-        <li data-tip="Bring your own phone, tablet, or laptop — you'll learn on the exact device you use at home.">Learn on your own device</li>
+      <ul class="hero-trust reveal" style="--d:.3s">
+        <li data-tip="Never more than 6 learners per instructor — 1-on-1 help always available.">Max 6 per class</li>
+        <li data-tip="If we ever use a word you don't know, we stop and explain it. Promise.">Zero jargon</li>
+        <li data-tip="Phones, tablets, laptops — learn on the exact device you use at home.">Your own device</li>
+        <li data-tip="Real humans teach every session. No pre-recorded lectures, ever.">100% human taught</li>
       </ul>
     </div>
-    <div class="hero-art" aria-hidden="true">
-      <svg viewBox="0 0 400 300" id="bridgeArt">
-        <defs>
-          <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stop-color="#16283A"/><stop offset="1" stop-color="#0F1D2B"/>
-          </linearGradient>
-          <linearGradient id="glow" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stop-color="#F2B84B" stop-opacity=".9"/><stop offset="1" stop-color="#F2B84B" stop-opacity="0"/>
-          </linearGradient>
-        </defs>
-        <rect width="400" height="300" rx="18" fill="url(#sky)"/>
-        <circle class="sun" cx="330" cy="64" r="26" fill="#F2B84B"/>
-        <circle class="sun-halo" cx="330" cy="64" r="40" fill="url(#glow)" opacity=".25"/>
-        <g class="stars">
-          <circle cx="60" cy="50" r="2" fill="#E9EEF3" opacity=".7"/>
-          <circle cx="120" cy="90" r="1.5" fill="#E9EEF3" opacity=".5"/>
-          <circle cx="210" cy="55" r="1.8" fill="#E9EEF3" opacity=".6"/>
-          <circle cx="270" cy="110" r="1.4" fill="#E9EEF3" opacity=".45"/>
-          <circle cx="40" cy="130" r="1.6" fill="#E9EEF3" opacity=".5"/>
-        </g>
-        <path class="bridge-path" d="M20 210 C120 90, 280 90, 380 210" fill="none" stroke="#4FB3A9" stroke-width="10" stroke-linecap="round"/>
-        <g class="bridge-piers" stroke="#4FB3A9" stroke-width="7">
-          <line x1="60"  y1="210" x2="60"  y2="166"/>
-          <line x1="130" y1="210" x2="130" y2="132"/>
-          <line x1="200" y1="210" x2="200" y2="122"/>
-          <line x1="270" y1="210" x2="270" y2="132"/>
-          <line x1="340" y1="210" x2="340" y2="166"/>
-        </g>
+    <div class="hero-stage reveal-scale" style="--d:.2s" aria-hidden="true">
+      <div class="hero-orb"></div>
+      <svg class="hero-bridge" viewBox="0 0 400 300">
+        <path class="bridge-path" d="M20 210 C120 90, 280 90, 380 210" fill="none" stroke="#3FB8AC" stroke-width="10" stroke-linecap="round"/>
         <rect x="10" y="206" width="380" height="12" rx="6" fill="#1F4E6B"/>
-        <g class="water">
-          <rect x="30" y="245" width="340" height="8" rx="4" fill="#4FB3A9" opacity=".18"/>
-          <rect x="70" y="263" width="260" height="8" rx="4" fill="#4FB3A9" opacity=".10"/>
-        </g>
         <circle class="traveler" r="7" fill="#F2B84B"/>
       </svg>
+      <div class="float-card fc-1"><span class="fc-icon">📱</span><span class="fc-title">Video call family</span><span class="fc-sub">Week 2 skill</span></div>
+      <div class="float-card fc-2"><span class="fc-icon">🛡️</span><span class="fc-title">Scam blocked</span><span class="fc-sub">You spotted it!</span></div>
+      <div class="float-card fc-3"><span class="fc-icon">🤖</span><span class="fc-title">AI wrote my email</span><span class="fc-sub">In 10 seconds</span></div>
+      <div class="float-card fc-4"><span class="fc-icon">💼</span><span class="fc-title">Resume sent</span><span class="fc-sub">Interview booked</span></div>
     </div>
   </section>
 
-  <!-- Stats strip -->
-  <section class="stats reveal" id="stats">
-    <div class="stat" data-tip="Three focused tracks — pick one or mix and match.">
-      <div class="stat-num" data-count="3">0</div>
-      <div class="stat-label">Learning tracks</div>
+  <!-- ============ STATS ============ -->
+  <section class="stats reveal" id="stats" aria-label="Academy at a glance">
+    <div class="stat" data-tip="Everyday Tech, Online Safety, and Job-Ready Skills — plus AI woven into all three.">
+      <div class="stat-num" data-count="3">0</div><div class="stat-label">Learning tracks</div>
     </div>
-    <div class="stat" data-tip="Every core skill ends with you doing it yourself — not watching someone else.">
-      <div class="stat-num" data-count="24">0</div>
-      <div class="stat-label">Hands-on skills taught</div>
+    <div class="stat" data-tip="Every skill ends with you doing it yourself — not watching someone else.">
+      <div class="stat-num" data-count="24" data-suffix="+">0</div><div class="stat-label">Hands-on skills</div>
+    </div>
+    <div class="stat" data-tip="Small on purpose, so nobody gets left behind.">
+      <div class="stat-num" data-count="6">0</div><div class="stat-label">Max class size</div>
     </div>
     <div class="stat" data-tip="Real humans. Real patience. No pre-recorded lectures.">
-      <div class="stat-num" data-count="100" data-suffix="%">0</div>
-      <div class="stat-label">Human instructors</div>
+      <div class="stat-num" data-count="100" data-suffix="%">0</div><div class="stat-label">Human instructors</div>
     </div>
-    <div class="stat" data-tip="Seriously. Ask us anything, as many times as you need.">
-      <div class="stat-num infinity">∞</div>
-      <div class="stat-label">Questions allowed</div>
+    <div class="stat" data-tip="Seriously — ask us anything, as many times as you need.">
+      <div class="stat-num">∞</div><div class="stat-label">Questions allowed</div>
     </div>
   </section>
 
-  <!-- About -->
-  <section class="section about" id="about">
+  <!-- ============ AUDIENCE ============ -->
+  <section class="section" id="belong">
     <div class="section-head reveal">
-      <h2>Why the bridge?</h2>
-      <p class="sub">Millions of capable people are cut off from services, jobs, and family simply because no one ever took the time to teach them the tools. We close that gap.</p>
+      <h2>You <span class="grad">belong</span> here.</h2>
+      <p class="sub">Whoever you are and wherever you're starting from — the bridge was built for you.</p>
     </div>
-    <div class="about-grid">
-      <div class="about-card reveal" style="--d:.05s">
-        <div class="card-icon">🤝</div>
-        <h3>Human-first teaching</h3>
-        <p>No lectures at a screen. Real instructors, unlimited questions, and pacing that adapts to you — because confidence is the curriculum.</p>
-      </div>
-      <div class="about-card reveal" style="--d:.15s">
-        <div class="card-icon">⚡</div>
-        <h3>Practical from day one</h3>
-        <p>Every session ends with something you can do that you couldn't do before: send the email, pay the bill, join the video call, spot the scam.</p>
-      </div>
-      <div class="about-card reveal" style="--d:.25s">
-        <div class="card-icon">🌉</div>
-        <h3>For every generation</h3>
-        <p>From seniors getting comfortable with a smartphone to adults re-entering the workforce — the bridge is built for whoever needs to cross it.</p>
-      </div>
+    <div class="aud-grid">
+      <div class="aud-chip reveal" style="--d:.02s" data-tip="Stay independent and connected — at your pace, with endless patience."><span class="a-icon">🧓</span><span class="a-name">Seniors</span></div>
+      <div class="aud-chip reveal" style="--d:.06s" data-tip="Translate decades of real experience into the digital skills employers want."><span class="a-icon">🔄</span><span class="a-name">Career changers</span></div>
+      <div class="aud-chip reveal" style="--d:.1s" data-tip="You served. Now let us serve you — practical skills for civilian careers."><span class="a-icon">🎖️</span><span class="a-name">Veterans</span></div>
+      <div class="aud-chip reveal" style="--d:.14s" data-tip="Keep up with your kids' world — and keep them safe in it."><span class="a-icon">👨‍👧</span><span class="a-name">Parents</span></div>
+      <div class="aud-chip reveal" style="--d:.18s" data-tip="Applications, resumes, interviews — all online now. We'll get you fluent."><span class="a-icon">💼</span><span class="a-name">Job seekers</span></div>
+      <div class="aud-chip reveal" style="--d:.22s" data-tip="Spreadsheets, email, AI helpers — run your business, don't chase it."><span class="a-icon">🏪</span><span class="a-name">Business owners</span></div>
     </div>
   </section>
 
-  <!-- Programs -->
-  <section class="section programs" id="programs">
+  <!-- ============ COURSES ============ -->
+  <section class="section" id="courses">
     <div class="section-head reveal">
-      <h2>Programs</h2>
-      <p class="sub">Three tracks, one goal: real independence with technology. <strong>Click a card to see what's inside.</strong></p>
+      <h2>Three tracks. One goal: <span class="grad">real independence.</span></h2>
+      <p class="sub">Beginner-friendly computer classes designed for adults. <strong>Hover the skills for details, click through for full course pages.</strong></p>
     </div>
-    <div class="program-grid">
-      <div class="program-card reveal" style="--d:.05s" data-track="1" tabindex="0">
-        <div class="badge">Track 01</div>
+    <div class="card-grid">
+      <article class="course-card reveal" style="--d:.04s" data-track="1">
+        <span class="badge">Track 01 · Beginner</span>
         <h3>Everyday Tech Confidence</h3>
-        <p>Smartphones, email, video calls, photos, and the apps that keep you connected to the people and services that matter.</p>
+        <div class="course-meta">
+          <span class="meta-chip">🕐 6 weeks</span><span class="meta-chip">📶 No experience needed</span>
+        </div>
+        <p>Smartphones, email, video calls, and the apps that keep you connected to the people and services that matter.</p>
         <ul>
           <li data-tip="Home screens, settings, app stores, and keeping things charged and updated.">Smartphone &amp; tablet basics</li>
           <li data-tip="Send, reply, attach photos, and video-chat with the grandkids.">Email, messaging &amp; video calls</li>
-          <li data-tip="See your doctor, check your balance, and pay bills — safely, from your couch.">Telehealth, banking &amp; bill pay</li>
+          <li data-tip="See your doctor, check your balance, pay bills — safely from your couch.">Telehealth, banking &amp; bill pay</li>
         </ul>
-        <div class="card-more">
-          <div class="card-more-inner">
-            <p>Perfect if technology feels like it moved on without you. We start wherever you are — even "which button turns it on" is a great first question.</p>
-            <p class="card-detail">📅 6 weekly sessions · 90 min each · device provided if needed</p>
-          </div>
+        <div class="card-links">
+          <a class="btn btn-primary btn-sm" href="/courses/everyday-tech.html">Explore course <span class="btn-arrow">→</span></a>
         </div>
-        <button class="card-toggle" aria-expanded="false">See details <span class="chev">▾</span></button>
-      </div>
-      <div class="program-card featured reveal" style="--d:.15s" data-track="2" tabindex="0">
-        <div class="badge badge-hot">Track 02 · Most popular</div>
+      </article>
+      <article class="course-card featured reveal" style="--d:.12s" data-track="2">
+        <span class="badge badge-hot">Track 02 · Most popular</span>
         <h3>Online Safety &amp; Scam Defense</h3>
-        <p>Practical protection for real life: recognize scams before they cost you, lock down your accounts, and browse with peace of mind.</p>
+        <div class="course-meta">
+          <span class="meta-chip">🕐 4 weeks</span><span class="meta-chip">📶 All levels</span>
+        </div>
+        <p>Recognize scams before they cost you, lock down your accounts, and browse with real peace of mind.</p>
         <ul>
-          <li data-tip="The 5 tell-tale signs of a scam message — and the 10-second check that beats them all.">Spotting phishing &amp; phone scams</li>
+          <li data-tip="The 5 tell-tale signs of a scam — and the 10-second check that beats them all.">Spotting phishing &amp; phone scams</li>
           <li data-tip="Strong passwords without the headache, plus two-factor made simple.">Passwords &amp; account security</li>
           <li data-tip="What apps really know about you — and the switches that shut the snooping off.">Privacy settings that matter</li>
         </ul>
-        <div class="card-more">
-          <div class="card-more-inner">
-            <p>Scammers stole over $10 billion from everyday people last year. One afternoon of training makes you a dramatically harder target — and helps you protect your family too.</p>
-            <p class="card-detail">📅 4 weekly sessions · 90 min each · family workbook included</p>
-          </div>
+        <div class="card-links">
+          <a class="btn btn-primary btn-sm" href="/courses/online-safety.html">Explore course <span class="btn-arrow">→</span></a>
         </div>
-        <button class="card-toggle" aria-expanded="false">See details <span class="chev">▾</span></button>
-      </div>
-      <div class="program-card reveal" style="--d:.25s" data-track="3" tabindex="0">
-        <div class="badge">Track 03</div>
+      </article>
+      <article class="course-card reveal" style="--d:.2s" data-track="3">
+        <span class="badge">Track 03 · Certificate</span>
         <h3>Job-Ready Computer Skills</h3>
-        <p>The skills employers expect on day one — documents, spreadsheets, professional email, and navigating online applications.</p>
+        <div class="course-meta">
+          <span class="meta-chip">🕐 8 weeks</span><span class="meta-chip">📜 Certificate</span>
+        </div>
+        <p>Documents, spreadsheets, professional email, and online applications — the skills employers expect on day one.</p>
         <ul>
           <li data-tip="Create, format, save, and share — the core of every office job.">Documents &amp; spreadsheets</li>
           <li data-tip="Write emails that get answered and manage a calendar like a pro.">Professional email &amp; calendars</li>
-          <li data-tip="Online applications, uploaded resumes, and video interviews — handled.">Job applications &amp; resumes</li>
+          <li data-tip="Online applications, uploaded resumes, video interviews — handled.">Job applications &amp; resumes</li>
         </ul>
-        <div class="card-more">
-          <div class="card-more-inner">
-            <p>Built with local employers' actual requirements. You finish with a polished resume, a professional email address, and the confidence to say "yes, I can do that."</p>
-            <p class="card-detail">📅 8 weekly sessions · 2 hrs each · certificate of completion</p>
-          </div>
+        <div class="card-links">
+          <a class="btn btn-primary btn-sm" href="/courses/job-ready.html">Explore course <span class="btn-arrow">→</span></a>
         </div>
-        <button class="card-toggle" aria-expanded="false">See details <span class="chev">▾</span></button>
-      </div>
+      </article>
     </div>
   </section>
 
-  <!-- Quiz -->
-  <section class="section quiz" id="quiz">
+  <!-- ============ JOURNEY ============ -->
+  <section class="section" id="journey">
+    <div class="section-head reveal">
+      <h2>Your journey across the bridge</h2>
+      <p class="sub">Watch the path light up — this is how every learner crosses.</p>
+    </div>
+    <div class="journey">
+      <div class="j-line" aria-hidden="true"></div>
+      <div class="j-step"><span class="j-tag">Day 1</span><h3>Say hello</h3><p>Tell us what you want to be able to do. No forms, no commitment, no silly questions — just a friendly conversation.</p></div>
+      <div class="j-step"><span class="j-tag">Week 1</span><h3>Get your plan</h3><p>We match you to a track and a pace — group sessions, one-on-one help, or a mix. You'll know exactly what happens next.</p></div>
+      <div class="j-step"><span class="j-tag">Every session</span><h3>Learn by doing</h3><p>On your own device, with a real human beside you, until each skill sticks. Every session ends with something you couldn't do before.</p></div>
+      <div class="j-step"><span class="j-tag">Graduation</span><h3>Cross the bridge</h3><p>Confidence, a certificate for the Job-Ready track — and lifetime alumni access. Stuck later? Come back and ask. Always.</p></div>
+    </div>
+  </section>
+
+  <!-- ============ QUIZ ============ -->
+  <section class="section" id="quiz">
     <div class="quiz-box reveal">
-      <div class="section-head">
-        <h2>Not sure where to start?</h2>
-        <p class="sub">Answer three quick questions and we'll point you to your track.</p>
+      <div class="section-head" style="margin-bottom:34px;">
+        <h2>What's your <span class="grad">digital confidence score?</span></h2>
+        <p class="sub">Four quick questions. Get your score, your track, and your personal roadmap.</p>
       </div>
       <div class="quiz-inner" id="quizInner">
+        <div class="quiz-progress" aria-hidden="true"><span></span></div>
         <div class="quiz-step active" data-step="0">
           <div class="quiz-q">1 · What sounds most like you?</div>
           <div class="quiz-opts">
-            <button data-vote="1">"My phone does things I never asked it to do."</button>
-            <button data-vote="2">"I get weird texts and emails and I'm never sure what's safe."</button>
-            <button data-vote="3">"I need computer skills for work — yesterday."</button>
+            <button data-vote="1" data-conf="8">"My phone does things I never asked it to do."</button>
+            <button data-vote="2" data-conf="22">"I get weird texts and I'm never sure what's safe."</button>
+            <button data-vote="3" data-conf="16">"I need computer skills for work — yesterday."</button>
           </div>
         </div>
         <div class="quiz-step" data-step="1">
           <div class="quiz-q">2 · What would feel like a win this month?</div>
           <div class="quiz-opts">
-            <button data-vote="1">Video-calling family without help</button>
-            <button data-vote="2">Knowing at a glance if a message is a scam</button>
-            <button data-vote="3">Sending out a resume I'm proud of</button>
+            <button data-vote="1" data-conf="6">Video-calling family without any help</button>
+            <button data-vote="2" data-conf="18">Knowing at a glance if a message is a scam</button>
+            <button data-vote="3" data-conf="12">Sending out a resume I'm proud of</button>
           </div>
         </div>
         <div class="quiz-step" data-step="2">
-          <div class="quiz-q">3 · How do you feel about your devices today?</div>
+          <div class="quiz-q">3 · How do you feel about AI?</div>
           <div class="quiz-opts">
-            <button data-vote="1">"We're not on speaking terms."</button>
-            <button data-vote="2">"Fine, but I worry about the dangers out there."</button>
-            <button data-vote="3">"Comfortable at home — but work tech is another story."</button>
+            <button data-vote="1" data-conf="4">"Honestly? It scares me a little."</button>
+            <button data-vote="2" data-conf="12">"Curious, but I don't know where to start."</button>
+            <button data-vote="3" data-conf="18">"Excited — I want it working for me."</button>
           </div>
         </div>
-        <div class="quiz-step result" data-step="3">
-          <div class="quiz-result-eyebrow">Your track</div>
+        <div class="quiz-step" data-step="3">
+          <div class="quiz-q">4 · How do you feel about your devices today?</div>
+          <div class="quiz-opts">
+            <button data-vote="1" data-conf="4">"We're not on speaking terms."</button>
+            <button data-vote="2" data-conf="14">"Fine, but I worry about the dangers out there."</button>
+            <button data-vote="3" data-conf="10">"OK at home — work tech is another story."</button>
+          </div>
+        </div>
+        <div class="quiz-step quiz-result" data-step="4">
+          <div class="score-ring" role="img" aria-label="Your digital confidence score">
+            <svg width="150" height="150" viewBox="0 0 150 150">
+              <defs><linearGradient id="scoreGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3FB8AC"/><stop offset="1" stop-color="#F2B84B"/></linearGradient></defs>
+              <circle class="ring-bg" cx="75" cy="75" r="65"/>
+              <circle class="ring-val" cx="75" cy="75" r="65"/>
+            </svg>
+            <div class="score-num"><span id="scoreVal">0</span><small>out of 100</small></div>
+          </div>
           <div class="quiz-result-title" id="quizResultTitle"></div>
           <p class="quiz-result-text" id="quizResultText"></p>
-          <div class="cta-row" style="justify-content:center;">
-            <button class="btn btn-primary" id="quizGoBtn">Show me my track ↓</button>
-            <button class="btn btn-ghost" id="quizRetryBtn">Start over</button>
+          <div class="quiz-roadmap" id="quizRoadmap"></div>
+          <div class="cta-row" style="justify-content:center; margin-bottom:0;">
+            <a class="btn btn-primary" id="quizGoBtn" href="#courses">See my track <span class="btn-arrow">→</span></a>
+            <button class="btn btn-ghost" id="quizRetryBtn" type="button">Start over</button>
           </div>
         </div>
-        <div class="quiz-dots" id="quizDots" aria-hidden="true"><span class="active"></span><span></span><span></span></div>
       </div>
     </div>
   </section>
 
-  <!-- How it works -->
-  <section class="section how" id="how">
-    <div class="section-head reveal">
-      <h2>How it works</h2>
-      <p class="sub">Simple on purpose — just like everything we teach.</p>
+  <!-- ============ AI ============ -->
+  <section class="section" id="ai">
+    <div class="ai-band reveal">
+      <div class="grid2">
+        <div>
+          <span class="badge badge-hot">New · AI for Everyone</span>
+          <h2 style="font-size:clamp(26px,3.4vw,38px); font-weight:800; letter-spacing:-.02em; margin:14px 0;">AI isn't just for programmers. <span style="background:var(--grad-brand); -webkit-background-clip:text; background-clip:text; color:transparent;">It's for you.</span></h2>
+          <p style="color:var(--muted); font-size:16px; margin-bottom:24px;">Write emails, polish your resume, plan meals, research anything, and automate the boring stuff — by simply asking in plain English. We'll show you how, step by patient step.</p>
+          <div class="cta-row" style="margin-bottom:0;">
+            <a href="/ai.html" class="btn btn-primary">Explore AI for Everyone <span class="btn-arrow">→</span></a>
+          </div>
+        </div>
+        <div class="chat-demo" aria-label="Example of using an AI assistant">
+          <div class="chat-line user"><span class="who">You type</span><p>"Help me write a kind email to my landlord about the leaky faucet."</p></div>
+          <div class="chat-line ai"><span class="who">AI replies in seconds</span><p>"Dear Mr. Alvarez, I hope you're well. I wanted to let you know the kitchen faucet has developed a steady leak…"</p></div>
+          <div class="chat-line user"><span class="who">That's it. Really.</span><p>If you can text, you can use AI. 💬</p></div>
+        </div>
+      </div>
     </div>
-    <ol class="steps">
-      <li class="reveal" style="--d:.05s"><span class="step-num" data-tip="No forms, no commitment — just a conversation.">1</span><div><h3>Say hello</h3><p>Reach out and tell us what you want to be able to do. There are no wrong answers and no silly questions.</p></div></li>
-      <li class="reveal" style="--d:.15s"><span class="step-num" data-tip="Group classes, 1-on-1 sessions, or both — your call.">2</span><div><h3>Get your plan</h3><p>We match you to a track and a pace — group sessions, one-on-one help, or a mix.</p></div></li>
-      <li class="reveal" style="--d:.25s"><span class="step-num" data-tip="And we don't disappear after — alumni can always come back with questions.">3</span><div><h3>Cross the bridge</h3><p>Learn by doing, on your own device, until the skills stick. We stay with you until you're confident.</p></div></li>
-    </ol>
   </section>
 
-  <!-- FAQ -->
-  <section class="section faq" id="faq">
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="section" id="stories">
+    <div class="section-head reveal">
+      <h2>Stories from the bridge</h2>
+      <p class="sub">From our early learners and beta sessions.</p>
+    </div>
+    <div class="testi-shell reveal">
+      <div class="testi-track" id="testiTrack">
+        <figure class="testi">
+          <div class="stars" aria-label="5 stars">★★★★★</div>
+          <blockquote>I swore I was hopeless with computers. Two weeks in, I video-called my granddaughter in Denver by myself — and cried a little, honestly.</blockquote>
+          <figcaption><cite><b>Margaret, 74</b> · Everyday Tech Confidence</cite></figcaption>
+        </figure>
+        <figure class="testi">
+          <div class="stars" aria-label="5 stars">★★★★★</div>
+          <blockquote>A scam text almost got me for $900. After the safety class, I spotted the next one in five seconds flat. This class pays for itself.</blockquote>
+          <figcaption><cite><b>Ron, 61</b> · Online Safety &amp; Scam Defense</cite></figcaption>
+        </figure>
+        <figure class="testi">
+          <div class="stars" aria-label="5 stars">★★★★★</div>
+          <blockquote>Twenty-two years in a warehouse, zero computer skills. Eight weeks later I had a resume, a professional email, and a job interview.</blockquote>
+          <figcaption><cite><b>Denise, 47</b> · Job-Ready Computer Skills</cite></figcaption>
+        </figure>
+        <figure class="testi">
+          <div class="stars" aria-label="5 stars">★★★★★</div>
+          <blockquote>They taught my mom to use AI to plan her garden and write to her pen pals. She's 81. She now explains ChatGPT to *me*.</blockquote>
+          <figcaption><cite><b>Kevin</b> · Gifted classes to his mom</cite></figcaption>
+        </figure>
+      </div>
+      <div class="testi-nav">
+        <button class="testi-arrow" id="testiPrev" aria-label="Previous story">←</button>
+        <button class="testi-dot active" aria-label="Story 1"></button>
+        <button class="testi-dot" aria-label="Story 2"></button>
+        <button class="testi-dot" aria-label="Story 3"></button>
+        <button class="testi-dot" aria-label="Story 4"></button>
+        <button class="testi-arrow" id="testiNext" aria-label="Next story">→</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WORKSHOP ============ -->
+  <section class="section" id="workshop">
+    <div class="section-head reveal">
+      <h2>Free intro workshop · <span class="grad">every Saturday</span></h2>
+      <p class="sub">90 friendly minutes. Bring your device and your questions — leave with three new skills.</p>
+    </div>
+    <div class="countdown reveal" id="countdown" aria-label="Countdown to the next free workshop">
+      <div class="cd-cell"><div class="cd-num" id="cdD">00</div><div class="cd-label">Days</div></div>
+      <div class="cd-cell"><div class="cd-num" id="cdH">00</div><div class="cd-label">Hours</div></div>
+      <div class="cd-cell"><div class="cd-num" id="cdM">00</div><div class="cd-label">Minutes</div></div>
+      <div class="cd-cell"><div class="cd-num" id="cdS">00</div><div class="cd-label">Seconds</div></div>
+    </div>
+    <div class="cta-row reveal" style="justify-content:center; margin-top:30px;">
+      <a href="#contact" class="btn btn-primary">Save my free seat <span class="btn-arrow">→</span></a>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section" id="faq">
     <div class="section-head reveal">
       <h2>Quick questions</h2>
       <p class="sub">The things people usually ask first.</p>
@@ -285,8 +372,12 @@
         <div class="faq-a"><p>Absolutely not. Our favorite students are the ones who swear they're hopeless — they're usually video-calling family within two sessions. There's no such thing as too far behind here.</p></div>
       </div>
       <div class="faq-item">
+        <button class="faq-q">Is AI hard to learn? Do I need to be technical? <span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>If you can send a text message, you can use AI. We teach it in plain English with everyday examples — writing letters, planning trips, researching purchases. No programming, ever.</p></div>
+      </div>
+      <div class="faq-item">
         <button class="faq-q">What does it cost? <span class="faq-icon">+</span></button>
-        <div class="faq-a"><p>Pricing is being finalized for our launch cohort — join the interest list below and you'll get founding-member rates before anyone else.</p></div>
+        <div class="faq-a"><p>Pricing is being finalized for our launch cohort — join the interest list below and you'll get founding-member rates before anyone else. The Saturday intro workshop is always free.</p></div>
       </div>
       <div class="faq-item">
         <button class="faq-q">Can I gift this to a parent or grandparent? <span class="faq-icon">+</span></button>
@@ -295,42 +386,106 @@
     </div>
   </section>
 
-  <!-- Contact -->
+  <!-- ============ CTA BAND ============ -->
+  <section class="section" id="cta">
+    <div class="cta-band reveal-scale">
+      <h2>Ready to cross the bridge?</h2>
+      <p>Book a free, no-pressure consultation. Tell us what you want to be able to do — we'll show you exactly how you'll get there.</p>
+      <a href="#contact" class="btn btn-lg">Book my free consultation</a>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
   <section class="section contact" id="contact">
     <div class="contact-grid">
       <div class="reveal">
-        <h2>Get started</h2>
+        <h2>Get started today</h2>
         <p>Classes are forming now. Send us a note and we'll get back to you with schedules and next steps — no obligation, no pressure.</p>
         <div class="detail" data-tip="A real person reads every message — usually within a day."><strong>Email</strong> contact@stevenjhubbard.com</div>
         <div class="detail"><strong>Based in</strong> Portland, OR</div>
+        <div style="margin-top:34px; padding:24px; background:var(--surface); border:1px solid var(--line); border-radius:var(--radius);">
+          <h3 style="font-size:15px; font-weight:800; margin-bottom:8px;">📬 The Bridge Bulletin</h3>
+          <p style="font-size:13.5px; margin-bottom:14px;">One friendly email a month: a scam alert, a tech tip, and an AI trick. No spam, ever.</p>
+          <form data-demo aria-label="Newsletter signup">
+            <div class="newsletter-row" style="margin:0;">
+              <input type="email" placeholder="you@example.com" aria-label="Email address" required>
+              <button class="btn btn-primary btn-sm" type="submit">Subscribe</button>
+            </div>
+            <div class="form-msg">🎉 You're on the list!</div>
+          </form>
+        </div>
       </div>
-      <form id="contactForm" class="reveal" style="--d:.12s">
+      <form data-demo class="reveal" style="--d:.12s" aria-label="Contact form">
         <div>
           <label for="name">Name</label>
-          <input type="text" id="name" name="name" required>
+          <input type="text" id="name" name="name" autocomplete="name" required>
         </div>
         <div>
           <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
+          <input type="email" id="email" name="email" autocomplete="email" required>
+        </div>
+        <div>
+          <label for="interest">I'm interested in…</label>
+          <select id="interest" name="interest">
+            <option>Everyday Tech Confidence</option>
+            <option>Online Safety &amp; Scam Defense</option>
+            <option>Job-Ready Computer Skills</option>
+            <option>AI for Everyone</option>
+            <option>The free Saturday workshop</option>
+            <option>A gift for someone I love</option>
+            <option>Custom / group training</option>
+          </select>
         </div>
         <div>
           <label for="message">What would you like to learn?</label>
           <textarea id="message" name="message" required placeholder="e.g. I want to video call my grandkids without calling my neighbor for help…"></textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Send Message</button>
-        <div class="form-msg" id="formMsg">🎉 Thanks for reaching out — we'll get back to you soon.</div>
+        <button type="submit" class="btn btn-primary">Send message <span class="btn-arrow">→</span></button>
+        <div class="form-msg">🎉 Thanks for reaching out — we'll get back to you soon.</div>
       </form>
     </div>
   </section>
 
-  <footer>
-    <p>Digital Bridge Academy — Practical tech skills, taught with patience.</p>
-    <p>&copy; 2026 Digital Bridge Academy. All rights reserved.</p>
-  </footer>
 </div>
+</main>
 
-<button id="backToTop" aria-label="Back to top" data-tip="Back to the top">↑</button>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="logo"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M4 34 C14 18, 34 18, 44 34" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/><line x1="10" y1="34" x2="10" y2="27.5" stroke="currentColor" stroke-width="3"/><line x1="19" y1="34" x2="19" y2="23.5" stroke="currentColor" stroke-width="3"/><line x1="29" y1="34" x2="29" y2="23.5" stroke="currentColor" stroke-width="3"/><line x1="38" y1="34" x2="38" y2="27.5" stroke="currentColor" stroke-width="3"/><line x1="2" y1="34" x2="46" y2="34" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/></svg><span>Digital Bridge <em>Academy</em></span></a>
+        <p>Practical tech skills, taught with patience. Because technology should welcome everyone.</p>
+      </div>
+      <div>
+        <h4>Courses</h4>
+        <a href="/courses/everyday-tech.html">Everyday Tech Confidence</a>
+        <a href="/courses/online-safety.html">Online Safety &amp; Scams</a>
+        <a href="/courses/job-ready.html">Job-Ready Skills</a>
+        <a href="/ai.html">AI for Everyone</a>
+      </div>
+      <div>
+        <h4>Start here</h4>
+        <a href="/#quiz">Confidence quiz</a>
+        <a href="/#workshop">Free Saturday workshop</a>
+        <a href="/#contact">Book a consultation</a>
+        <a href="/#faq">FAQ</a>
+      </div>
+      <div>
+        <h4>Get involved</h4>
+        <a href="/#contact">Gift a class</a>
+        <a href="/#contact">Volunteer to teach</a>
+        <a href="/#contact">Partner with us</a>
+        <a href="/#contact">Request group training</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Digital Bridge Academy · Portland, OR</span>
+      <span>Made with patience 🌉</span>
+    </div>
+  </div>
+</footer>
 
-<script src="main.js"></script>
+<button id="backToTop" aria-label="Back to top">↑</button>
+<script src="/main.js" defer></script>
 </body>
 </html>

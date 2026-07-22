@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://digital-bridge-academy.vercel.app/sitemap.xml
