@@ -72,7 +72,17 @@
   /* ---------- Rotating word ---------- */
   var rotator = $('#rotator');
   if (rotator && !reduceMotion) {
-    var words = ['video call the grandkids', 'bank online safely', 'spot every scam', 'use AI with confidence', 'apply for jobs online'];
+    var words = [
+      'video call the grandkids',
+      'bank online safely',
+      'spot every scam',
+      'use AI with confidence',
+      'apply for jobs online',
+      'pay bills from your couch',
+      'share photos with the family',
+      'plan a whole trip with AI',
+      'shop online without worry'
+    ];
     var wi = 0;
     setInterval(function () {
       wi = (wi + 1) % words.length;
