@@ -150,7 +150,8 @@ nav.main-nav a.active{color:var(--teal);}
 .rotator.swap{animation:rotate-word .5s ease;}
 @keyframes rotate-word{from{opacity:0; transform:translateY(10px);} to{opacity:1; transform:none;}}
 .cta-row{display:flex; gap:14px; flex-wrap:wrap; margin-bottom:26px;}
-.hero-trust{display:flex; gap:10px 20px; flex-wrap:wrap; list-style:none;}
+.hero .cta-row{margin-bottom:44px;}
+.hero-trust{display:flex; gap:14px 24px; flex-wrap:wrap; list-style:none;}
 .hero-trust li{font-size:13.5px; color:var(--muted); font-weight:600; cursor:help; display:flex; align-items:center; gap:7px;}
 .hero-trust li::before{content:'✓'; color:var(--on-accent); background:var(--teal); width:18px; height:18px; border-radius:50%; display:inline-flex; align-items:center; justify-content:center; font-size:11px; flex-shrink:0;}
 
