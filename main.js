@@ -69,9 +69,11 @@
     navLinks.forEach(function (a) { var el = document.getElementById(a.dataset.section); if (el) spy.observe(el); });
   }
 
-  /* ---------- Rotating word ---------- */
+  /* ---------- Rotating word ----------
+     Always rotates (text change isn't motion); the swap animation
+     itself is skipped for reduced-motion users. */
   var rotator = $('#rotator');
-  if (rotator && !reduceMotion) {
+  if (rotator) {
     var words = [
       'video call the grandkids',
       'bank online safely',
@@ -86,9 +88,10 @@
     var wi = 0;
     setInterval(function () {
       wi = (wi + 1) % words.length;
+      if (reduceMotion) { rotator.textContent = words[wi]; return; }
       rotator.classList.remove('swap'); void rotator.offsetWidth;
       rotator.textContent = words[wi]; rotator.classList.add('swap');
-    }, 2700);
+    }, 5500);
   }
 
   /* ---------- Particles (hero) ---------- */
