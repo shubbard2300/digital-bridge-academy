@@ -29,7 +29,7 @@ Course), sitemap + robots.
 - Session counts, durations, and "device provided" logistics are draft copy.
 - Pricing is intentionally unstated ("launch cohort" framing).
 - Forms (contact, newsletter, booking) POST to `/api/contact` (Resend →
-  contact@stevenjhubbard.com). **Requires the `RESEND_API_KEY` environment
+  contact@digital-bridge-academy.com). **Requires the `RESEND_API_KEY` environment
   variable on the Vercel project** — without it submissions show the
   graceful error fallback with a direct email address.
 - The booking widget is a styled placeholder: requests are emailed and

@@ -24,7 +24,7 @@ export default async function handler(req, res) {
       },
       body: JSON.stringify({
         from: 'Digital Bridge Academy <no-reply@mendmedicalwear.com>',
-        to: 'contact@stevenjhubbard.com',
+        to: 'contact@digital-bridge-academy.com',
         reply_to: email,
         subject: `Digital Bridge Academy — new inquiry from ${name}`,
         text: `Name: ${name}\nEmail: ${email}\n\n${message}`,

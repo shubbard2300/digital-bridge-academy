@@ -350,7 +350,7 @@
         form.reset();
         if (isBooking) $$('.slot.selected', form).forEach(function (s) { s.classList.remove('selected'); s.setAttribute('aria-pressed', 'false'); });
       }).catch(function () {
-        if (err) { err.textContent = 'Something went wrong — please email us directly at contact@stevenjhubbard.com.'; err.classList.add('show'); }
+        if (err) { err.textContent = 'Something went wrong — please email us directly at contact@digital-bridge-academy.com.'; err.classList.add('show'); }
       }).finally(function () {
         if (btn) btn.disabled = false;
       });
