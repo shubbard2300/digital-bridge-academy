@@ -1,0 +1,17 @@
+# Digital Bridge Academy
+
+> Patient, human-first computer classes for adults and seniors in Portland, OR — everyday tech confidence, online safety and scam defense, job-ready computer skills, and AI for beginners. Small groups, plain language, no jargon. Free intro workshop every Saturday and free consultations.
+
+Run by Steven J. Hubbard (Steven J Hubbard LLC). Contact: contact@digital-bridge-academy.com, (415) 359-7606.
+
+## Courses
+
+- [Everyday Tech Confidence](https://www.digital-bridge-academy.com/courses/everyday-tech.html): Smartphone basics, email, video calls, online banking, telehealth — 6 weeks, small groups.
+- [Online Safety & Scam Defense](https://www.digital-bridge-academy.com/courses/online-safety.html): Spot phishing, phone scams, and fraud; password security, two-factor, privacy settings.
+- [Job-Ready Computer Skills](https://www.digital-bridge-academy.com/courses/job-ready.html): Microsoft Office and Google Workspace basics, professional email, resume writing, job applications.
+- [AI for Everyone](https://www.digital-bridge-academy.com/ai.html): Use AI assistants for email, resumes, research, and everyday tasks — no programming required.
+
+## Getting started
+
+- [Home](https://www.digital-bridge-academy.com/): Overview, digital confidence quiz, FAQ, and booking.
+- Free intro workshop every Saturday; book a consultation via the contact form on the homepage.
