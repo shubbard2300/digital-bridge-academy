@@ -345,12 +345,20 @@
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload)
       }).then(function (res) {
-        if (!res.ok) throw new Error('Request failed');
+        if (!res.ok) {
+          return res.json().catch(function () { return {}; }).then(function (data) {
+            throw new Error(data && data.error ? data.error : '');
+          });
+        }
         if (msg) msg.classList.add('show');
         form.reset();
         if (isBooking) $$('.slot.selected', form).forEach(function (s) { s.classList.remove('selected'); s.setAttribute('aria-pressed', 'false'); });
-      }).catch(function () {
-        if (err) { err.textContent = 'Something went wrong — please email us directly at contact@digital-bridge-academy.com.'; err.classList.add('show'); }
+      }).catch(function (e) {
+        if (err) {
+          var detail = e && e.message ? ' (' + e.message + ')' : '';
+          err.textContent = 'Something went wrong' + detail + ' — please email us directly at contact@digital-bridge-academy.com.';
+          err.classList.add('show');
+        }
       }).finally(function () {
         if (btn) btn.disabled = false;
       });
