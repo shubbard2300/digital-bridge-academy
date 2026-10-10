@@ -12,7 +12,7 @@ job-ready computer skills, and AI for beginners.
 - `ai.html` — AI for Everyone: capability grid, tabbed prompt examples,
   before/after comparisons.
 - `courses/*.html` — three course pages (generated from a shared template):
-  skills, interactive syllabus, instructor, reviews, certificate preview.
+  skills, interactive syllabus, instructor, reviews.
 
 ## Tech
 

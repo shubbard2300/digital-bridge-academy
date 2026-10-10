@@ -383,11 +383,6 @@ form .btn{align-self:flex-start;}
 .instructor h3{font-size:18px; font-weight:800;}
 .instructor .role{color:var(--amber); font-size:13px; font-weight:800; margin-bottom:8px;}
 .instructor p{color:var(--muted); font-size:14px;}
-.cert-card{max-width:560px; margin:0 auto; background:var(--surface); border:2px dashed var(--line-strong); border-radius:var(--radius-lg); padding:38px; text-align:center; transition:border-color .3s, transform .3s;}
-.cert-card:hover{border-color:var(--amber); transform:scale(1.02);}
-.cert-card .cert-seal{font-size:44px; margin-bottom:12px;}
-.cert-card h3{font-weight:800; font-size:20px; margin-bottom:6px;}
-.cert-card p{color:var(--muted); font-size:14px;}
 .related{display:flex; gap:14px; flex-wrap:wrap; justify-content:center;}
 .related a{text-decoration:none; color:var(--text); background:var(--surface); border:1px solid var(--line); border-radius:999px; padding:12px 22px; font-size:14px; font-weight:800; transition:.25s;}
 .related a:hover{border-color:var(--teal); color:var(--teal); transform:translateY(-3px);}
