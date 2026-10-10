@@ -1,0 +1,40 @@
+{
+  "subject": "Is that really your friend?",
+  "preheader": "A cloned-account scam, locking your email, and AI that sharpens a resume.",
+  "intro": "A good week to protect the account that matters most.",
+  "sections": [
+    {
+      "label": "Scam of the week",
+      "title": "A second friend request from someone you already know",
+      "paragraphs": [
+        "You get a new friend request from someone you're already friends with, and then a message asking for help, money, or a code. Their account was copied."
+      ],
+      "bullets": [
+        "Contact them another way, like a phone call, and ask if they really sent it.",
+        "Don't send money or codes through messages.",
+        "Report the fake account in the app, and let your friend know."
+      ]
+    },
+    {
+      "label": "Tip of the week",
+      "title": "Lock your email first",
+      "paragraphs": [
+        "Your email can reset every other account, so protect it first. Turn on two-step verification, which is also called two-factor authentication."
+      ],
+      "bullets": [
+        "Open your email account's security settings. For Google, go to myaccount.google.com and choose Security.",
+        "Find \"2-Step Verification\" or \"Two-factor authentication\" and follow the prompts.",
+        "Keep any backup codes it gives you somewhere safe at home."
+      ]
+    },
+    {
+      "label": "AI trick of the week",
+      "title": "Tidy up a resume bullet",
+      "paragraphs": [
+        "Paste a few lines from your resume and ask for clearer wording."
+      ],
+      "prompt": "Here are three bullets from my resume. Make them clearer and stronger without making anything up: [paste them here]",
+      "note": "Only keep what is true, and read every line before you use it."
+    }
+  ]
+}

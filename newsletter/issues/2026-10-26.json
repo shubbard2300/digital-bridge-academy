@@ -1,0 +1,41 @@
+{
+  "subject": "Your bank is not calling you",
+  "preheader": "A phone scam to hang up on, a screenshot shortcut, and AI that explains letters.",
+  "intro": "Three short things this week. The first one could save you real money.",
+  "sections": [
+    {
+      "label": "Scam of the week",
+      "title": "The \"bank fraud department\" phone call",
+      "paragraphs": [
+        "Someone calls saying they're from your bank's fraud department. They sound serious. They say your account is in danger and you must act right now: move money, read out a code, or install something."
+      ],
+      "bullets": [
+        "Hang up. A real bank won't mind.",
+        "Call the number printed on the back of your card or on your bank's website, not a number the caller gave you and not the number on your caller ID.",
+        "Never read out a code that was texted to you. That code is the key to your account."
+      ]
+    },
+    {
+      "label": "Tip of the week",
+      "title": "Take a screenshot",
+      "paragraphs": [
+        "A screenshot is a photo of your screen. It's handy for saving a confirmation, a map, or an error message to show someone."
+      ],
+      "bullets": [
+        "iPhone with Face ID: press the side button and the volume-up button together, then let go.",
+        "Most Android phones: press the power button and the volume-down button together.",
+        "Find the picture afterward in your Photos or Gallery app."
+      ],
+      "note": "The buttons differ a little by model. If it doesn't work, search \"screenshot\" plus your phone's name."
+    },
+    {
+      "label": "AI trick of the week",
+      "title": "Explain that letter in plain English",
+      "paragraphs": [
+        "Got a confusing notice? Type or paste the words in and ask AI to explain them."
+      ],
+      "prompt": "Explain this in plain English, as if I've never seen it before, and tell me what I need to do and by when: [paste the text here]",
+      "note": "Remove your name, address and account numbers before you paste anything, and check anything important with the sender."
+    }
+  ]
+}

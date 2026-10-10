@@ -1,0 +1,41 @@
+{
+  "subject": "Before you shop online this week",
+  "preheader": "Spotting fake shops, bookmarks that keep you safe, and a Thanksgiving plan from AI.",
+  "intro": "Holiday shopping season is here, and so are the fake stores. Here's how to spot them.",
+  "sections": [
+    {
+      "label": "Scam of the week",
+      "title": "Fake online shops",
+      "paragraphs": [
+        "Prices look amazing, the photos look great, and the website is brand new. You pay, and nothing arrives."
+      ],
+      "bullets": [
+        "Check the web address. Look for misspellings or odd endings.",
+        "Search the shop's name plus \"reviews\" before you buy.",
+        "Pay with a credit card, not a debit card or a bank transfer. Credit cards give you more protection if something goes wrong.",
+        "If a deal looks too good to be true, it usually is."
+      ]
+    },
+    {
+      "label": "Tip of the week",
+      "title": "Bookmark the sites you use",
+      "paragraphs": [
+        "Open your bank, pharmacy and favorite shops from a bookmark, never from a link in an email or text."
+      ],
+      "bullets": [
+        "Open the site you use often.",
+        "Find the bookmark or star option in your browser's menu and add it.",
+        "Next time, go through your bookmarks."
+      ]
+    },
+    {
+      "label": "AI trick of the week",
+      "title": "Turn a rough idea into a plan",
+      "paragraphs": [
+        "Hosting a holiday meal? AI makes a decent first plan."
+      ],
+      "prompt": "Help me plan a simple Thanksgiving dinner for 6 people, one of them vegetarian. Give me a shopping list and a schedule for the day.",
+      "note": "Tell it what you already have at home and it will shorten the list."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "subject": "That scary pop-up is lying",
+  "preheader": "A fake virus warning, why updates matter, and a thank-you note in seconds.",
+  "intro": "Short and useful, as always. Start with the pop-up.",
+  "sections": [
+    {
+      "label": "Scam of the week",
+      "title": "The pop-up that says your computer is infected",
+      "paragraphs": [
+        "A loud warning fills your screen with a phone number to call \"Microsoft\" or \"Apple Support.\" It may even beep. It's a trick."
+      ],
+      "bullets": [
+        "Real companies don't put phone numbers in pop-ups.",
+        "Don't call, and don't click anything inside the box.",
+        "Close the browser tab or app. If it won't close, restart the computer. Never let anyone take remote control of your computer."
+      ]
+    },
+    {
+      "label": "Tip of the week",
+      "title": "Keep your phone up to date",
+      "paragraphs": [
+        "Updates fix security holes that scammers use. Make it a habit."
+      ],
+      "bullets": [
+        "iPhone: Settings, then General, then Software Update.",
+        "Android: open Settings and search for \"software update.\"",
+        "If it says you're up to date, you're done. If not, plug the phone in and tap Update, ideally overnight."
+      ]
+    },
+    {
+      "label": "AI trick of the week",
+      "title": "Write a thank-you note",
+      "paragraphs": [
+        "Let AI write the first draft, then make it yours."
+      ],
+      "prompt": "Write a warm three-sentence thank-you note to my neighbor Pat for watching my dog last weekend.",
+      "note": "Change the name and the details, and it's your note."
+    }
+  ]
+}

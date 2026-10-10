@@ -41,3 +41,13 @@ Course), sitemap + robots.
 
 Git-linked to the `digital-bridge-academy` Vercel project — every push to
 `main` deploys automatically.
+
+## The Bridge Bulletin (weekly newsletter)
+
+- **Sign-up:** the home page box posts to `/api/subscribe`, which emails a signed confirm link (double opt-in). `/api/confirm` adds the person to the Resend segment. Nothing is stored before the click.
+- **Issues:** one file per Monday in `newsletter/issues/YYYY-MM-DD.json` (subject, preheader, intro, and three sections: scam, tip, AI trick). Add files ahead of time; a file named for a date that is not a Monday never sends.
+- **Sending:** Vercel cron hits `/api/send-newsletter` at 16:00 and 17:00 UTC on Mondays. Only the run that lands on 9am Pacific sends, so it is right in both PST and PDT. If no file exists for that date, nothing is sent and the owner gets an email.
+- **Test:** `GET /api/send-newsletter?test=1&issue=YYYY-MM-DD` with `Authorization: Bearer $CRON_SECRET` sends that issue to the owner only.
+- **Env vars (Vercel):** `RESEND_API_KEY` (full access, not send-only), `RESEND_SEGMENT_ID`, `NEWSLETTER_SECRET` (any long random string), `CRON_SECRET` (any long random string). Resend must have `digital-bridge-academy.com` verified as a sending domain.
+- **Self-check:** `node newsletter/selftest.mjs`
+
