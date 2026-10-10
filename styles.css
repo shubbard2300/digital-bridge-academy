@@ -417,3 +417,6 @@ form .btn{align-self:flex-start;}
 .form-err{font-size:14px; color:#FF7A7F; display:none; font-weight:700;}
 [data-theme="light"] .form-err{color:#C62828;}
 .form-err.show{display:block; animation:quiz-in .35s ease;}
+.about{max-width:720px; margin:0 auto;}
+.about h3{font-size:18px; font-weight:800; margin:26px 0 6px;}
+.about p{color:var(--muted); font-size:16.5px; line-height:1.7;}
