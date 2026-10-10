@@ -422,3 +422,23 @@ form .btn{align-self:flex-start;}
 .about p{color:var(--muted); font-size:16.5px; line-height:1.7;}
 .about-img{max-width:720px; margin:0 auto 28px;}
 .about-img img{width:100%; height:auto; display:block; border-radius:var(--radius);}
+
+/* thank-you popup */
+dialog.thanks{border:0; padding:0; background:transparent; color:var(--text); width:min(92vw,460px); max-width:92vw; overflow:visible;}
+dialog.thanks::backdrop{background:rgba(6,16,24,.62); backdrop-filter:blur(4px); -webkit-backdrop-filter:blur(4px);}
+.thanks-inner{position:relative; overflow:hidden; text-align:center; background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); box-shadow:var(--shadow-3); padding:40px 30px 30px;}
+.thanks-check{width:76px; height:76px; margin:0 auto 14px; display:block; fill:none; stroke:var(--teal); stroke-width:3.5; stroke-linecap:round; stroke-linejoin:round;}
+.thanks-inner h2{font-size:clamp(24px,5vw,30px); font-weight:800; letter-spacing:-.02em; margin:0 0 10px; text-wrap:balance;}
+.thanks-inner p{color:var(--muted); font-size:16.5px; line-height:1.6; margin:0 0 24px;}
+.thanks-confetti{position:absolute; inset:0; pointer-events:none;}
+.thanks-confetti i{position:absolute; top:-12px; width:9px; height:14px; border-radius:2px; opacity:0;}
+@media (prefers-reduced-motion:no-preference){
+  dialog.thanks[open] .thanks-inner{animation:thanksPop .42s cubic-bezier(.2,.9,.3,1.2);}
+  dialog.thanks[open] .tc-ring{stroke-dasharray:145; stroke-dashoffset:145; animation:thanksDraw .6s .1s ease-out forwards;}
+  dialog.thanks[open] .tc-tick{stroke-dasharray:40; stroke-dashoffset:40; stroke:var(--amber); animation:thanksDraw .4s .55s ease-out forwards;}
+  .thanks-confetti i{animation:thanksFall 1.7s ease-in forwards;}
+}
+@keyframes thanksPop{from{transform:scale(.92) translateY(14px); opacity:0;} to{transform:none; opacity:1;}}
+@keyframes thanksDraw{to{stroke-dashoffset:0;}}
+@keyframes thanksFall{0%{opacity:1; transform:translateY(0) rotate(0);} 100%{opacity:0; transform:translateY(420px) rotate(520deg);}}
+
