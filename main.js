@@ -318,6 +318,50 @@
     return 'Booking request — free consultation\nDay: ' + d.textContent + '\nTime: ' + t.textContent + ' (visitor local time)';
   }
 
+  /* ---------- Thank-you popup ---------- */
+  var thanks = document.getElementById('thanks'), thanksFocus = null;
+  function openThanks(kind, name, slot) {
+    if (!thanks || typeof thanks.showModal !== 'function') return false;
+    var first = (name || '').trim().split(/\s+/)[0];
+    var title, body;
+    if (kind === 'booking') {
+      title = "You're on the list for " + slot.day + ' at ' + slot.time + '!';
+      body = "We'll confirm your time by email within a few days. Looking forward to meeting you.";
+    } else if (kind === 'newsletter') {
+      title = "You're in! \uD83C\uDF89";
+      body = 'Look for The Bridge Bulletin in your inbox once a month: a scam alert, a tech tip, and an AI trick.';
+    } else {
+      title = first && first !== 'Website' ? 'Thank you, ' + first + '!' : 'Thank you!';
+      body = "Your message is on its way to a real person. We'll reply by email within a few days.";
+    }
+    $('#thanksTitle').textContent = title;
+    $('#thanksBody').textContent = body;
+    var box = $('#thanksConfetti'); box.textContent = '';
+    if (!reduceMotion) {
+      var colors = ['#4CC4B8', '#F6C15E', '#1F4E6B', '#3FB8AC', '#F2B84B'];
+      for (var i = 0; i < 26; i++) {
+        var p = document.createElement('i');
+        p.style.left = (Math.random() * 100) + '%';
+        p.style.background = colors[i % colors.length];
+        p.style.animationDelay = (Math.random() * 0.5) + 's';
+        p.style.animationDuration = (1.3 + Math.random() * 0.9) + 's';
+        box.appendChild(p);
+      }
+    }
+    thanksFocus = document.activeElement;
+    thanks.showModal();
+    $('#thanksClose').focus();
+    return true;
+  }
+  if (thanks) {
+    $('#thanksClose').addEventListener('click', function () { thanks.close(); });
+    thanks.addEventListener('click', function (e) { if (e.target === thanks) thanks.close(); });
+    thanks.addEventListener('close', function () {
+      $('#thanksConfetti').textContent = '';
+      if (thanksFocus && thanksFocus.focus) thanksFocus.focus();
+    });
+  }
+
   /* ---------- Live forms → /api/contact ---------- */
   $$('form[data-live]').forEach(function (form) {
     form.addEventListener('submit', function (e) {
@@ -332,6 +376,7 @@
         if (err) { err.textContent = 'Please pick a day and a time first.'; err.classList.add('show'); }
         return;
       }
+      var slot = isBooking ? { day: $('.slot.selected', dayRow).textContent, time: $('.slot.selected', timeRow).textContent } : null;
       var interest = form.querySelector('select[name="interest"]');
       if (interest) message = 'Interested in: ' + interest.value + '\n\n' + message;
       var payload = {
@@ -350,9 +395,9 @@
             throw new Error(data && data.error ? data.error : '');
           });
         }
-        if (msg) msg.classList.add('show');
+        var kind = isBooking ? 'booking' : (form.dataset.message ? 'newsletter' : 'contact');
+        if (!openThanks(kind, payload.name, slot) && msg) msg.classList.add('show');
         if (typeof gtag === 'function') {
-          var kind = isBooking ? 'booking' : (form.dataset.message ? 'newsletter' : 'contact');
           gtag('event', 'generate_lead', { form_type: kind, interest: interest ? interest.value : undefined });
           if (isBooking) gtag('event', 'booking_request');
         }

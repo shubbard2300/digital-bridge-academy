@@ -395,7 +395,7 @@
   <section class="section" id="book">
     <div class="section-head reveal">
       <h2>Book a time that <span class="grad">works for you</span></h2>
-      <p class="sub">Pick a day and time for your free consultation or workshop seat — we'll confirm by email within one business day.</p>
+      <p class="sub">Pick a day and time for your free consultation or workshop seat — we'll confirm by email within a few days.</p>
     </div>
     <div class="booking-grid">
       <div class="booking-box reveal">
@@ -567,6 +567,16 @@
     </div>
   </div>
 </footer>
+
+<dialog id="thanks" class="thanks" aria-labelledby="thanksTitle" aria-describedby="thanksBody">
+  <div class="thanks-inner">
+    <div class="thanks-confetti" id="thanksConfetti" aria-hidden="true"></div>
+    <svg class="thanks-check" viewBox="0 0 52 52" aria-hidden="true"><circle class="tc-ring" cx="26" cy="26" r="23"/><path class="tc-tick" d="M15 27.5l8 8 14.5-16.5"/></svg>
+    <h2 id="thanksTitle"></h2>
+    <p id="thanksBody"></p>
+    <button type="button" class="btn btn-primary" id="thanksClose">Wonderful, thank you</button>
+  </div>
+</dialog>
 
 <button id="backToTop" aria-label="Back to top">↑</button>
 <script src="/main.js" defer></script>
