@@ -424,7 +424,7 @@ form .btn{align-self:flex-start;}
 .about-img img{width:100%; height:auto; display:block; border-radius:var(--radius);}
 
 /* thank-you popup */
-dialog.thanks{border:0; padding:0; background:transparent; color:var(--text); width:min(92vw,460px); max-width:92vw; overflow:visible;}
+dialog.thanks{margin:auto; border:0; padding:0; background:transparent; color:var(--text); width:min(92vw,460px); max-width:92vw; overflow:visible;}
 dialog.thanks::backdrop{background:rgba(6,16,24,.62); backdrop-filter:blur(4px); -webkit-backdrop-filter:blur(4px);}
 .thanks-inner{position:relative; overflow:hidden; text-align:center; background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); box-shadow:var(--shadow-3); padding:40px 30px 30px;}
 .thanks-check{width:76px; height:76px; margin:0 auto 14px; display:block; fill:none; stroke:var(--teal); stroke-width:3.5; stroke-linecap:round; stroke-linejoin:round;}
