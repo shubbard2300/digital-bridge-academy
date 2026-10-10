@@ -351,6 +351,11 @@
           });
         }
         if (msg) msg.classList.add('show');
+        if (typeof gtag === 'function') {
+          var kind = isBooking ? 'booking' : (form.dataset.message ? 'newsletter' : 'contact');
+          gtag('event', 'generate_lead', { form_type: kind, interest: interest ? interest.value : undefined });
+          if (isBooking) gtag('event', 'booking_request');
+        }
         form.reset();
         if (isBooking) $$('.slot.selected', form).forEach(function (s) { s.classList.remove('selected'); s.setAttribute('aria-pressed', 'false'); });
       }).catch(function (e) {
