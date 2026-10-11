@@ -28,21 +28,18 @@ export function pacificNow(d = new Date()) {
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
 // issue: { subject, preheader, intro, sections: [{ label, title, paragraphs[], bullets[], prompt, note }] }
-// The three sections are themed by position: scam, tip, AI trick. Images are hosted on the site;
-// if a mail client blocks them, the coloured blocks and alt text still carry the layout.
+// The three sections are themed by position: scam, tip, AI trick. No images, so nothing can be blocked.
 const THEMES = [
-  { bg: '#FFF3EA', accent: '#B8470C', chip: '#FFE0CC', img: 'scam', alt: 'A woman at a kitchen table inspecting her phone with a magnifying glass' },
-  { bg: '#E7F5F2', accent: '#12766B', chip: '#C9ECE6', img: 'tip', alt: 'A cozy desk with a phone on a stand, reading glasses, tea and a sticky note' },
-  { bg: '#EEF0FF', accent: '#4047B5', chip: '#DADEFF', img: 'ai', alt: 'A woman laughing with delight as she types on her phone at a cafe window' },
+  { bg: '#FFF3EA', accent: '#B8470C', chip: '#FFE0CC' },
+  { bg: '#E7F5F2', accent: '#12766B', chip: '#C9ECE6' },
+  { bg: '#EEF0FF', accent: '#4047B5', chip: '#DADEFF' },
 ];
 
-export function renderIssue(issue, unsubscribeUrl = '{{{RESEND_UNSUBSCRIBE_URL}}}', imgBase = `${SITE}/images/newsletter`) {
+export function renderIssue(issue, unsubscribeUrl = '{{{RESEND_UNSUBSCRIBE_URL}}}') {
   const navy = '#12202e', teal = '#1F8D82', amber = '#F6C15E', ink = '#1B2B36', mute = '#55656f';
-  const img = (name, alt) => `<img src="${imgBase}/${name}.jpg" width="600" alt="${esc(alt)}" style="display:block;width:100%;max-width:600px;height:auto;border:0;">`;
   const sec = (s, i) => {
     const t = THEMES[i % THEMES.length];
     return `
-    <tr><td style="padding:0;">${img(t.img, t.alt)}</td></tr>
     <tr><td style="background:${t.bg};padding:26px 28px 30px;border-left:6px solid ${t.accent};">
       <span style="display:inline-block;padding:4px 12px;background:${t.chip};border-radius:99px;font:700 12px Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:${t.accent};">${esc(s.label)}</span>
       <h2 style="margin:12px 0 12px;font:800 25px/1.25 Georgia,serif;color:${navy};">${esc(s.title)}</h2>
@@ -59,9 +56,8 @@ export function renderIssue(issue, unsubscribeUrl = '{{{RESEND_UNSUBSCRIBE_URL}}
   <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;background:#ffffff;border-radius:14px;overflow:hidden;">
     <tr><td style="background:${navy};padding:24px 28px 20px;border-bottom:4px solid ${amber};">
       <div style="font:800 28px Georgia,serif;color:#ffffff;">The Bridge Bulletin</div>
-      <div style="margin-top:4px;font:14px Arial,sans-serif;color:#9fd8d1;">Digital Bridge Academy &middot; every Monday</div>
+      <div style="margin-top:4px;font:14px Arial,sans-serif;color:#9fd8d1;">Digital Bridge Academy &middot; Start Your Week Smarter</div>
     </td></tr>
-    <tr><td style="padding:0;">${img('header', 'A footbridge over calm water at sunrise')}</td></tr>
     <tr><td style="padding:26px 28px 24px;font:19px/1.6 Georgia,serif;color:${ink};">${esc(issue.intro)}</td></tr>
     ${issue.sections.map(sec).join('')}
     <tr><td style="padding:28px;background:${navy};text-align:center;">
@@ -77,7 +73,7 @@ export function renderIssue(issue, unsubscribeUrl = '{{{RESEND_UNSUBSCRIBE_URL}}
     </td></tr>
   </table></td></tr></table></body></html>`;
   const text = [
-    'THE BRIDGE BULLETIN · Digital Bridge Academy · every Monday', '', issue.intro, '',
+    'THE BRIDGE BULLETIN · Digital Bridge Academy · Start Your Week Smarter', '', issue.intro, '',
     ...issue.sections.flatMap((s) => [
       s.label.toUpperCase() + ': ' + s.title,
       ...(s.paragraphs || []),
