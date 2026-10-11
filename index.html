@@ -486,13 +486,14 @@
         <div class="detail"><strong>Based in</strong> Portland, OR</div>
         <div style="margin-top:34px; padding:24px; background:var(--surface); border:1px solid var(--line); border-radius:var(--radius);">
           <h3 style="font-size:15px; font-weight:800; margin-bottom:8px;">📬 The Bridge Bulletin</h3>
-          <p style="font-size:13.5px; margin-bottom:14px;">One friendly email a month: a scam alert, a tech tip, and an AI trick. No spam, ever.</p>
-          <form data-live data-name="Newsletter signup" data-message="Please add me to The Bridge Bulletin (monthly newsletter)." aria-label="Newsletter signup">
+          <p style="font-size:13.5px; margin-bottom:14px;">One friendly email every Monday: a scam alert, a tech tip, and an AI trick. No spam, ever.</p>
+          <form data-live data-name="Newsletter signup" data-message="Please add me to The Bridge Bulletin (weekly newsletter)." aria-label="Newsletter signup">
             <div class="newsletter-row" style="margin:0;">
               <input type="email" name="email" placeholder="you@example.com" aria-label="Email address" required>
+              <input type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;">
               <button class="btn btn-primary btn-sm" type="submit">Subscribe</button>
             </div>
-            <div class="form-msg" role="status">🎉 You're on the list!</div>
+            <div class="form-msg" role="status">🎉 Almost there! Check your email and tap the confirm link.</div>
             <div class="form-err" role="alert"></div>
           </form>
         </div>

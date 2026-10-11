@@ -1,0 +1,40 @@
+{
+  "subject": "Giving season: give safely",
+  "preheader": "Fake charities, three buttons for video calls, and a holiday letter in minutes.",
+  "intro": "A short issue for the busy season.",
+  "sections": [
+    {
+      "label": "Scam of the week",
+      "title": "Fake charity requests",
+      "paragraphs": [
+        "Giving season brings real charities and fake ones. The fake ones may call, text, or message you, often with a name close to a real charity."
+      ],
+      "bullets": [
+        "Don't donate to someone who called or texted you.",
+        "Go to the charity's own website yourself and give there.",
+        "Be wary of anyone who wants payment by gift card or wire."
+      ]
+    },
+    {
+      "label": "Tip of the week",
+      "title": "Video calls: three buttons to know",
+      "paragraphs": [
+        "Whichever app you use, find these three."
+      ],
+      "bullets": [
+        "Mute: turns your microphone off so background noise doesn't interrupt.",
+        "Camera: turns your picture on or off.",
+        "Flip camera (on a phone): switch to the back camera to show something around you."
+      ]
+    },
+    {
+      "label": "AI trick of the week",
+      "title": "Draft the holiday letter",
+      "paragraphs": [
+        "Give AI a few facts and it will write a warm first draft."
+      ],
+      "prompt": "Help me write a warm, light holiday letter to family under 250 words. This year: [list a few things that happened].",
+      "note": "Add your own touches before you send it. It should sound like you."
+    }
+  ]
+}

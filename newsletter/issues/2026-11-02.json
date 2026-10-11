@@ -1,0 +1,40 @@
+{
+  "subject": "\"Grandma, it's me\": agree on a code word",
+  "preheader": "A scam call that targets families, talking instead of typing, and dinner ideas.",
+  "intro": "This week's scam is a nasty one, and the fix is a conversation you can have at the dinner table.",
+  "sections": [
+    {
+      "label": "Scam of the week",
+      "title": "The \"Grandma, it's me\" call",
+      "paragraphs": [
+        "A caller says \"Grandma, it's me\" or \"Dad, I'm in trouble.\" They need money fast and ask you not to tell anyone. Scammers can even imitate a voice."
+      ],
+      "bullets": [
+        "Hang up and call the person on the number you already have for them.",
+        "Ask a question only they could answer, something you couldn't find online.",
+        "Agree on a family code word now, while things are calm. A person who is really in trouble can say it."
+      ]
+    },
+    {
+      "label": "Tip of the week",
+      "title": "Talk instead of type",
+      "paragraphs": [
+        "Your phone can turn your voice into text, which is a gift if small keyboards drive you mad."
+      ],
+      "bullets": [
+        "Open a message or note and tap the box so the keyboard appears.",
+        "Tap the little microphone on the keyboard.",
+        "Speak. Say \"comma\" or \"period\" for punctuation, then tap the microphone again to stop."
+      ]
+    },
+    {
+      "label": "AI trick of the week",
+      "title": "Dinner from what's in the fridge",
+      "paragraphs": [
+        "Tell AI what you have, and it will suggest meals."
+      ],
+      "prompt": "I have chicken thighs, rice, carrots and half an onion. Give me 3 easy dinners that take under 40 minutes.",
+      "note": "Add anything you avoid, like \"no dairy\" or \"low salt\", and it will adjust."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "subject": "Gift cards are only for gifts",
+  "preheader": "The gift card scam, passwords that are easy to remember, and AI that compares things.",
+  "intro": "Today: one rule that protects you from a whole family of scams.",
+  "sections": [
+    {
+      "label": "Scam of the week",
+      "title": "Anyone who asks you to pay with gift cards",
+      "paragraphs": [
+        "Banks, government agencies, tech support, and \"your grandson\" don't take payment in gift cards. Only scammers do."
+      ],
+      "bullets": [
+        "If anyone asks you to buy gift cards and read out the numbers, it's a scam. Every time.",
+        "Stop and hang up, even if they say it's urgent or a secret.",
+        "If you've already paid, call the gift card company straight away using the number on the card. They can sometimes stop the money if you act fast, and tell your bank too."
+      ]
+    },
+    {
+      "label": "Tip of the week",
+      "title": "Use three random words as a password",
+      "paragraphs": [
+        "Long beats clever. Three or four unrelated words are easier to remember and much harder to guess than something like \"P@ssw0rd1.\""
+      ],
+      "bullets": [
+        "Pick words that don't belong together, like \"teapot canyon sneaker.\"",
+        "Use a different one for your email, because email can reset every other account.",
+        "Never reuse your email password anywhere else."
+      ]
+    },
+    {
+      "label": "AI trick of the week",
+      "title": "Compare two things without the sales pitch",
+      "paragraphs": [
+        "Choosing between two products? Ask AI for the plain pros and cons."
+      ],
+      "prompt": "I'm choosing between a robot vacuum and a regular upright vacuum for a small apartment with one cat. Give me pros and cons of each in plain language.",
+      "note": "AI can be wrong about prices and specs, so check those on the store's own page."
+    }
+  ]
+}

@@ -328,8 +328,8 @@
       title = "You're on the list for " + slot.day + ' at ' + slot.time + '!';
       body = "We'll confirm your time by email within a few days. Looking forward to meeting you.";
     } else if (kind === 'newsletter') {
-      title = "You're in! \uD83C\uDF89";
-      body = 'Look for The Bridge Bulletin in your inbox once a month: a scam alert, a tech tip, and an AI trick.';
+      title = 'Almost there! Check your email \uD83D\uDCEC';
+      body = "We just sent you a confirmation link. Tap it and you're on the list for The Bridge Bulletin, every Monday morning: a scam alert, a tech tip, and an AI trick.";
     } else {
       title = first && first !== 'Website' ? 'Thank you, ' + first + '!' : 'Thank you!';
       body = "Your message is on its way to a real person. We'll reply by email within a few days.";
@@ -385,7 +385,9 @@
         message: message
       };
       if (btn) btn.disabled = true;
-      fetch('/api/contact', {
+      var isNews = !!form.dataset.message;
+      if (isNews) payload.company = fieldVal('input[name="company"]');
+      fetch(isNews ? '/api/subscribe' : '/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload)

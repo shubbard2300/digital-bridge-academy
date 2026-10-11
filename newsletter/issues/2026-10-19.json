@@ -1,0 +1,40 @@
+{
+  "subject": "Don't tap that package text, plus 2 quick wins",
+  "preheader": "A scam to spot, an easier-to-read phone, and a trick with AI.",
+  "intro": "Welcome to The Bridge Bulletin. Every Monday you get one scam to watch for, one useful tip and one AI trick, in plain English.",
+  "sections": [
+    {
+      "label": "Scam of the week",
+      "title": "The \"your package couldn't be delivered\" text",
+      "paragraphs": [
+        "A text says a package is held up and you need to tap a link to fix the address or pay a small fee. It looks like it came from a delivery company. It didn't."
+      ],
+      "bullets": [
+        "You don't have to act. If you're expecting a package, open the delivery company's own app or website yourself, or check the order in your shopping account.",
+        "Don't tap the link, and don't reply, not even to say STOP.",
+        "Delete the message. If you already tapped it, don't enter any details, and tell someone you trust."
+      ]
+    },
+    {
+      "label": "Tip of the week",
+      "title": "Make the text on your phone bigger",
+      "paragraphs": [
+        "You shouldn't have to squint. It takes a minute to fix."
+      ],
+      "bullets": [
+        "iPhone: Settings, then Display & Brightness, then Text Size. Slide to the size you like.",
+        "Android: Settings, then Display, then Font size. The names vary a little by phone, so type \"font size\" into the search box at the top of Settings."
+      ],
+      "note": "Menu names change between phone models. If you can't find it, search the Settings app."
+    },
+    {
+      "label": "AI trick of the week",
+      "title": "Ask AI to say it nicely",
+      "paragraphs": [
+        "Stuck on how to word a tricky message? Tell AI what you want to say, and ask it to make it polite and short."
+      ],
+      "prompt": "Write a kind, short email to my landlord letting him know the kitchen faucet has a steady leak and asking when someone can look at it.",
+      "note": "Read the result, change anything that doesn't sound like you, and send it yourself. Never type passwords or account numbers into an AI chat."
+    }
+  ]
+}
