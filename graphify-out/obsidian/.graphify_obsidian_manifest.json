@@ -1,0 +1,27 @@
+{
+  "files": [
+    ".obsidian/graph.json",
+    "_COMMUNITY_arm.md",
+    "_COMMUNITY_contact.js.md",
+    "_COMMUNITY_main.js.md",
+    "_COMMUNITY_onScroll.md",
+    "_COMMUNITY_pad.md",
+    "applyTheme().md",
+    "arm().md",
+    "composeBooking().md",
+    "contact.js.md",
+    "fieldVal().md",
+    "go().md",
+    "handler().md",
+    "litJourney().md",
+    "main.js.md",
+    "markRevealed().md",
+    "onScroll().md",
+    "pad().md",
+    "pickSlot().md",
+    "showStep().md",
+    "sizeCanvas().md",
+    "sweepReveals().md",
+    "tickCd().md"
+  ]
+}
