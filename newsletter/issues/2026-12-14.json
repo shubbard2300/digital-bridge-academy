@@ -1,0 +1,43 @@
+{
+  "subject": "A job offer you never applied for",
+  "preheader": "A fake job scam, how to back up your photos, and a packing checklist from AI.",
+  "intro": "Many of us are looking for extra income or a fresh start. Scammers know it. Here is what to watch for.",
+  "sections": [
+    {
+      "label": "Scam of the week",
+      "title": "The job offer that finds you first",
+      "paragraphs": [
+        "A text or email says you got a job you never applied for. The pay sounds great, the work is easy, and they want to hire you right away. Often the \"interview\" happens only by chat.",
+        "Then comes the catch. They ask you to pay for equipment or training, to cash a check and send some of it back, or to share your bank or ID details for \"payroll.\""
+      ],
+      "bullets": [
+        "A real employer never asks you to pay money to get hired.",
+        "Never send back part of a check. The check can turn out to be fake after the money is gone.",
+        "Look up the company yourself and contact it through its own website. Do not use the contact details in the message.",
+        "Do not share ID or bank details before you have confirmed the job is real."
+      ]
+    },
+    {
+      "label": "Tip of the week",
+      "title": "Back up your photos",
+      "paragraphs": [
+        "Phones get lost, dropped and replaced. Your photos should not go with them. A backup keeps a second copy in a safe place."
+      ],
+      "bullets": [
+        "iPhone: open Settings, tap your name, then look for iCloud and Photos, and turn on the sync option.",
+        "Android: open the Google Photos app, tap your profile picture, then look for the backup option and turn it on.",
+        "Connect to Wi-Fi and plug in the phone while it makes the first copy. It can take a while."
+      ],
+      "note": "Menu names vary by phone and software version. If you cannot find it, search \"backup\" in Settings."
+    },
+    {
+      "label": "AI trick of the week",
+      "title": "Make a checklist for any trip",
+      "paragraphs": [
+        "Travel season is close. Tell AI where you are going and for how long, and ask for a packing checklist."
+      ],
+      "prompt": "Make a packing checklist for a 4-day winter visit to see family. We will drive, and I need to bring a few medications and a laptop. Group the list by category.",
+      "note": "Skim the list and cross off what you do not need. Never type passport or account numbers into an AI chat."
+    }
+  ]
+}
