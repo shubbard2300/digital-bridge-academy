@@ -154,6 +154,8 @@ nav.main-nav a.active{color:var(--teal);}
 .hero-trust{display:flex; gap:14px 24px; flex-wrap:wrap; list-style:none;}
 .hero-trust li{font-size:13.5px; color:var(--muted); font-weight:600; cursor:help; display:flex; align-items:center; gap:7px;}
 .hero-trust li::before{content:'✓'; color:var(--on-accent); background:var(--teal); width:18px; height:18px; border-radius:50%; display:inline-flex; align-items:center; justify-content:center; font-size:11px; flex-shrink:0;}
+/* The tooltip arrow also lives on ::before; keep its position, border and hover animation off the check */
+.hero-trust li::before, .hero-trust li:hover::before, .hero-trust li:focus-visible::before{position:static; transform:none; border:0; display:inline-flex; animation:none;}
 
 /* Floating device cards */
 .hero-stage{position:relative; min-height:420px;}
@@ -161,12 +163,12 @@ nav.main-nav a.active{color:var(--teal);}
 .float-card{position:absolute; background:var(--glass); backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); border:1px solid var(--line); border-radius:var(--radius); padding:18px 20px; box-shadow:var(--shadow-2); will-change:transform; transition:box-shadow .3s;}
 .float-card:hover{box-shadow:var(--shadow-3);}
 .float-card .fc-icon{font-size:26px; display:block; margin-bottom:8px;}
-.float-card .fc-title{font-weight:800; font-size:14.5px;}
-.float-card .fc-sub{font-size:12.5px; color:var(--muted);}
+.float-card .fc-title{display:block; font-weight:800; font-size:14.5px;}
+.float-card .fc-sub{display:block; margin-top:2px; font-size:12.5px; color:var(--muted);}
 .fc-1{top:4%; left:6%; animation:floaty 7s ease-in-out infinite, spotlight 12s linear infinite 0s;}
 .fc-2{top:26%; right:2%; animation:floaty 8s ease-in-out infinite 1.2s, spotlight 12s linear infinite 3s;}
 .fc-3{bottom:22%; left:0%; animation:floaty 9s ease-in-out infinite 2.1s, spotlight 12s linear infinite 6s;}
-.fc-4{bottom:2%; right:12%; animation:floaty 7.5s ease-in-out infinite .6s, spotlight 12s linear infinite 9s;}
+.fc-4{bottom:2%; right:0; animation:floaty 7.5s ease-in-out infinite .6s, spotlight 12s linear infinite 9s;}
 @keyframes floaty{0%,100%{transform:translateY(0) rotate(-.6deg);} 50%{transform:translateY(-14px) rotate(.6deg);}}
 /* each card takes a 3s turn at the front (z-index + a small lift) on a 12s loop; `scale` composes with floaty's transform */
 @keyframes spotlight{0%{z-index:1; scale:1; box-shadow:var(--shadow-2);} 4%,24%{z-index:5; scale:1.06; box-shadow:var(--shadow-3);} 30%,100%{z-index:1; scale:1; box-shadow:var(--shadow-2);}}
